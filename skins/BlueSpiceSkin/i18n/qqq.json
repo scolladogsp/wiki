@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Liuxinyu970226",
+			"Shirayuki"
+		]
+	},
+	"bluespiceskin-desc": "Used in [[Special:Version]], description of bluespice skin",
+	"bs-tools-widgets-headline": "Headline of widget container.\n{{Identical|Widget}}",
+	"bs-tools-button": "Anchor alternative text for more.\n{{Identical|More}}",
+	"bs-title-actions-print-text": "Anchor alternative text for print.\n{{Identical|Print}}",
+	"bs-title-actions-print-title": "Tooltip for the button to display printable version of the page."
+}

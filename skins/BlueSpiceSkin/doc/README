@@ -1,0 +1,61 @@
+This skin supports some extra data fields provided exclusively by BlueSpice:
+
+'bs_title_actions': Array[] - Array of associative arrays containing 'id', 
+	'title' and 'href' fields
+
+'bs_dataBeforeContent': ViewBaseElement[] - As 'sitenotice' does not apply to 
+	the semantic meaning this extra field was defined
+
+'bs_dataAfterContent': ViewBaseElement[] - Usually to be merged with 
+	'dataAfterContent' provided by MediaWiki itself
+
+'bs_navigation_main': Array[] - Array of associative arrays containing 'key', 
+	'label' and 'content' fields. The numeric index shall allow to enforce a 
+	specific order
+
+'bs_navigation_sites':
+
+'bs_navigation_sites_active': 
+
+'bs_skyscraper': String - Arbitrary HTML
+
+'bs_personal_info': Array[] -  Array of anchor tag definitions
+
+'bs_search_hidden_fields': Array - key value pairs that are used as hidden 
+	fields within the search form
+
+==Anchor tag definition arrays==
+Example:
+array(
+	'id' => 'bs-some-dom-id'
+	'href' => 'http://<wgServer><wgScriptPath>/index.php?...'
+	'text' => 'The HTML content of the anchor tag'
+	'title' => 'Value of the title attribute'
+	'class' => array( ... )
+)
+
+Required fields are 'id', 'href' and 'text'
+
+==Content item arrays==
+Example:
+
+$tpl->data['bs_some_content_items'] = array(
+	20 => array(
+		'id' => 'bs-some-dom-id',
+		'content' => array(
+			...
+		),
+		'class' => array( ... )
+	),
+	30 => ...,
+	10 => ...
+);
+
+* Can be ksorted to allow definition of an order
+* Field 'id' is required
+* If field 'content' is not set a div#<id> will be generated
+* Field content may contain 
+** Indexed array of ViewBaseElement derived objects
+** Indexed array of anchor tag definition arrays
+** Array of HTML encoded strings
+** Plain HTML encoded string

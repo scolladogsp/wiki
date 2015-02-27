@@ -1,0 +1,140 @@
+#p-navigation > h5 {
+	display: none;
+}
+
+#bs-nav-sections,
+#bs-nav-sections.ui-tabs.ui-widget.ui-widget-content.ui-corner-all {
+	padding: 0px;
+	h5 {
+		margin-top: 0.3em;
+		font-weight: normal;
+	}
+}
+
+#bs-nav-sections {
+	h5, a, .ui-widget-content a {
+		color: #555;
+	}
+	h5 {
+		text-transform: uppercase;
+	}
+}
+
+#bs-left-column ul {
+	list-style: none;
+	margin: 0;
+}
+
+#bs-nav-sections > div li {
+	margin: 5px 0;
+	display: block;
+}
+
+#bs-left-column #bs-nav-tabs {
+	height: 51px;
+	box-sizing: border-box;
+	padding: .2em .2em 0;
+	display: table;
+	width: 100%;
+}
+
+#bs-left-column #bs-nav-tabs li {
+	list-style:none;
+	margin: 0 1em;
+	display: table-cell;
+	vertical-align: bottom;
+	text-align: center;
+}
+
+#bs-left-column #bs-nav-tabs li.ui-state-active a,
+#bs-left-column #bs-nav-tabs li a,
+#bs-left-column #bs-nav-tabs li a:visited {
+	color: rgb(255, 255, 255);
+	cursor:pointer;
+	height: 36px;
+	display: block;
+	width: 24px;
+	margin: 0 auto;
+}
+
+#bs-left-column #bs-nav-tabs li.ui-tabs-selected a,
+#bs-left-column #bs-nav-tabs li.ui-state-active a,
+#bs-left-column #bs-nav-tabs li a:hover{
+	text-decoration:none;
+	cursor:pointer;
+	color: @bs-color-dark-blue;
+	background: url("@{bs-skin-path}images/desktop/navi-header-marker.png") center bottom no-repeat;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected{
+	padding-bottom: 0 !important;
+}
+#bs-nav-sections,
+#bs-left-column .ui-corner-all {
+	.border-radius(0px);
+	margin:0;
+}
+#bs-nav-tabs{
+	background: none @bs-color-middle-blue-a;
+}
+#bs-nav-sections > div, #bs-left-column #bs-nav-sections.ui-tabs div.ui-tabs-panel {
+	background: none @bs-color-bright-blue-a;
+}
+#bs-nav-sections.ui-widget-content{
+	background: none transparent;
+}
+
+#bs-left-column .ui-corner-left,
+#bs-left-column .ui-corner-right,
+#bs-left-column .ui-corner-all {
+	border:none;
+}
+
+#bs-left-column .ui-state-default,
+#bs-left-column .ui-widget-content .ui-state-default,
+#bs-left-column .ui-widget-header .ui-state-default {
+	background:none;
+	border:none;
+}
+
+#bs-left-column .ui-tabs .ui-tabs-nav li {
+	border: none;
+	float:none;
+}
+
+#bs-left-column .ui-tabs .ui-tabs-panel {
+	background:none;
+	border:none;
+	padding: 20px 25px;
+}
+
+#bs-left-column .ui-widget-header {
+	font-weight:400;
+}
+
+#bs-left-column li.ui-state-active a,
+#bs-left-column li a,
+#bs-left-column li a:visited.ui-tabs .ui-tabs-nav li a {
+	float:none;
+	text-decoration:none;
+	padding:0;
+}
+
+.bs-nav-tab-icon {
+	font-size: 200%;
+}
+#bs-usersidebar-edit {
+	float: right;
+}
+
+div.bs-nav-tab {
+	padding: 20px 25px;
+}
+
+#bs-left-column div.bs-nav-tab ul{
+	margin-left: 15px;
+}
+/* This would hide all navigation, changing just the 'type' of flickering
+div[id^="bs-nav-section-"] {
+	display: none;
+}
+*/

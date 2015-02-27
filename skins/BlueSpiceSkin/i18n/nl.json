@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sjoerddebruin",
+			"Siebrand"
+		]
+	},
+	"bluespiceskin-desc": "Uiterlijk voor de uitbreiding BlueSpice",
+	"bs-tools-widgets-headline": "WIDGETS",
+	"bs-tools-button": "MEER",
+	"bs-title-actions-print-text": "Afdrukken",
+	"bs-title-actions-print-title": "Geeft een afdrukbare weergave van de pagina"
+}

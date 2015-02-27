@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"SPQRobin",
+			"Niknetniko"
+		]
+	},
+	"bs-extjs-portal-height": "Hoogte",
+	"bs-extjs-portal-timespan-week": "Week",
+	"bs-extjs-portal-timespan-month": "Maand"
+}

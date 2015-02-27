@@ -1,0 +1,16 @@
+body.mediawiki {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 0.8em;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: oblique;
+}
+
+#bs-left-column {
+	font-size: 90%;
+}

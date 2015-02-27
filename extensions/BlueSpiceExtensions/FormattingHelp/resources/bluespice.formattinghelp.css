@@ -1,0 +1,22 @@
+/**
+ * Stylesheet for FormattingHelp
+ *
+ * Part of BlueSpice for MediaWiki
+ *
+ * @author     Markus Glaser <glaser@hallowelt.biz>
+ * @package    BlueSpice_Extensions
+ * @subpackage FormattingHelp
+ * @copyright  Copyright (C) 2011 Hallo Welt! - Medienwerkstatt GmbH, All rights reserved.
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v2 or later
+ * @filesource
+ */
+
+#bs-editbutton-formattinghelp {
+	/*@embed*/
+	background-image: url(images/button_formatinghelp.png);
+}
+
+#bs-formattinghelp-table {
+	font-family: 'Courier New', monospace;
+	border-collapse: collapse;
+}

@@ -1,0 +1,133 @@
+
+/**
+ * The following code is highly modified from vector.
+ */
+
+#preftoc {
+	/* Tabs */
+	width: 100%;
+	float: left;
+	clear: both;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	li {
+		/* Tab */
+		float: left;
+		margin: 0;
+		padding: 0;
+		padding-right: 1px;
+		height: 2.25em;
+		white-space: nowrap;
+		list-style-type: none;
+		list-style-image: none;
+		border: solid 1px #ccc;
+		border-left: none;
+
+		/* Sadly, IE6 won't understand this */
+		&:first-child {
+			border-left: solid 1px #ccc;
+		}
+
+		&.selected {
+			background-color: @bs-color-neutral3;
+			a {
+				color: #333;
+				font-weight: bold;
+				text-decoration: none;
+			}
+		}
+	}
+
+	a,
+	a:active {
+		display: inline-block;
+		position: relative;
+		padding: 0.5em;
+		text-decoration: none;
+		background-image: none;
+		font-size: 0.9em;
+	}
+
+	a:hover,
+	a:focus {
+		text-decoration: underline;
+	}
+}
+
+#preferences {
+	float: left;
+	width: 100%;
+	margin: 0;
+	margin-top: -2px;
+	clear: both;
+	border: solid 1px #ccc;
+	background-color: #fafafa;
+
+	fieldset {
+		border: none;
+		border-top: solid 1px #ccc;
+
+		&.prefsection {
+			border: none;
+			padding: 0;
+			margin: 1em;
+
+			legend.mainLegend {
+				display: none;
+			}
+		}
+	}
+
+	legend {
+		color: #666;
+	}
+
+	td {
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+
+	div.mw-prefs-buttons {
+		padding: 1em;
+
+		input {
+			margin-right: 0.25em;
+		}
+	}
+}
+
+.htmlform-tip {
+	font-size: x-small;
+	padding: .2em 2em;
+	color: #666;
+}
+
+fieldset.bs-prefs{
+	border: 1px solid @bs-color-middle-blue;
+	border-top-width: 31px;
+	padding: 0;
+	background-color: @bs-color-middle-blue;
+	legend{
+		background-color: @bs-color-middle-blue;
+		padding: 6px;
+		font-family: @bs-font-default;
+	}
+	legend:before{
+		font-family: 'icomoon';
+		margin-right: 6px;
+	}
+	div.bs-prefs-body{
+		background-color: white;
+		padding: 10px 5px;
+	}
+}
+
+fieldset.bs-prefs.bs-prefs-viewstate-collapsed{
+	border: 1px solid @bs-color-light-grey;
+	border-top-width: 31px;
+	background-color: @bs-color-light-grey;
+	legend{
+		background-color: @bs-color-light-grey;
+	}
+}

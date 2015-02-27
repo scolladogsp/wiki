@@ -1,0 +1,80 @@
+
+[class^="icon-"] span:first-child,
+[class*=" icon-"] span:first-child {
+	display: none;
+}
+
+a[class^="icon-"],
+a[class*=" icon-"],
+a[class^="icon-"]:visited,
+a[class*=" icon-"]:visited {
+	text-decoration: none;
+	color: lightgrey;
+}
+
+a[class^="icon-"]:hover,
+a[class*=" icon-"]:hover {
+	text-decoration: none;
+	color: @bs-color-primary;
+}
+
+#bs-nav-sections {
+	#p-help, #p-navigation {
+		li > a {
+			display: table-cell;
+			vertical-align: middle;
+			height: 24px;
+			padding-left: 32px;
+			box-sizing: border-box;
+			/*@embed*/
+			background-image: url("@{bs-skin-path}images/desktop/bs-nav-icon-sprite.png");
+			background-repeat: no-repeat;
+			background-position: 0 -144px;
+		}
+	}
+
+	li#n-mainpage > a {
+		background-position: 0 -72px;
+	}
+
+	li#n-special-allpages > a {
+		background-position: 0 -24px;
+	}
+
+	li#n-special-categories > a {
+		background-position: 0 0;
+	}
+
+	li#n-special-recentchanges > a {
+		background-position: 0 -120px;
+	}
+
+	li#n-external-manuals > a {
+		background-position: 0 -48px;
+	}
+
+	li#n-external-support > a {
+		background-position: 0 -168px;
+	}
+
+	li#n-external-contact > a {
+		background-position: 0 -96px;
+	}
+	#bs-nav-tabs a{
+		font-size: 210%;
+	}
+}
+
+.icon-plus-after:after {
+	content: "\e702";
+}
+.icon-arrow-down9-after:after {
+	content: "\e896";
+}
+.icon-menu2-after:after{
+	content: "\e6b9";
+}
+.icon-search-light:before {
+	content: "\e680";
+	color: #fff;
+}

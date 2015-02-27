@@ -1,0 +1,222 @@
+#bs-apps {
+	height:32px;
+}
+
+#bs-apps li {
+	zoom:1;
+	height:32px;
+	margin:0;
+	padding:0;
+	float: left;
+}
+
+#bs-apps li a {
+	zoom:1;
+	display:block;
+	height:32px;
+	text-align:center;
+	vertical-align:bottom;
+	color:#b4b3b3;
+	text-decoration:none;
+	line-height:32px;
+	padding:0 10px;
+}
+
+#bs-apps li a.active,
+#bs-apps li a:hover {
+	color:#717171;
+	/*@embed*/
+	background:url("@{bs-skin-path}images/desktop/appsbar-active.png") no-repeat center top;
+}
+
+#bs-apps ul {
+	margin:0;
+	list-style: none;
+}
+
+#bs-apps ul.bs-apps-child li{
+	background: none #BABABA repeat-y;
+}
+
+#bs-apps ul.bs-apps-child li a:hover{
+	background-color:#B1B1B1;
+	background-image: none;
+}
+#bs-apps ul.bs-apps-child{
+	background: none transparent;
+	border: none;
+}
+
+#bs-logo {
+	float: left;
+}
+
+#bs-menu-top-right > div,
+#bs-user-container > div {
+	float:right;
+}
+
+#bs-menu-top-right{
+	width: auto;
+}
+
+
+#bs-button-user ul#bs-personal-menu, #bs-cactions-button ul.bs-personal-menu{
+	position: absolute;
+	z-index: 1000;
+	background-color: @bs-color-neutral3;
+	list-style: none;
+	margin: 0;
+
+	li {
+		a {
+			text-decoration: none;
+		}
+	}
+
+	li:hover{
+		background-color: @bs-color-neutral;
+	}
+}
+
+ul#bs-personal-info {
+	list-style: none;
+}
+
+ul#bs-personal-info > li{
+	float: left;
+}
+
+ul#bs-personal-info > li.active > a {
+	color: @bs-color-secondary;
+}
+
+ul#bs-personal-info > li > a {
+	padding: 1em;
+}
+
+#bs-menu-top-right > #bs-user-container-open{
+	display: none;
+}
+
+#bs-button-user {
+	cursor: pointer;
+}
+
+#bs-button-user div.bs-userminiprofile,
+#bs-button-user div.bs-userminiprofile > a.bs-block {
+	display: inline-block;
+}
+
+
+#p-personal-label {
+	display: none;
+}
+#bs-menu-top-right #bs-personal-info{
+	float: right;
+}
+#bs-button-user{
+	div.bs-userminiprofile, #bs-personal-menu-container, #bs-personal-name{
+		float: right;
+	}
+	#bs-personal-name{
+		height: 24px;
+		background-color: @bs-color-dark-grey;
+		padding: 9px 10px 4px 10px;
+	}
+	div.bs-userminiprofile{
+		padding: 0px 5px 5px 5px;
+		background-color: #bababa;
+		height: 32px;
+	}
+	ul#bs-personal-info{
+		margin-top: 0px;
+		 > li{
+			height: 19px;
+			padding: 8px 5px 0px 5px;
+			> a{
+				height: 24px;
+				min-width: 24px;
+				display: block;
+				padding: 0;
+				font-size: 9px;
+			}
+			> a::before{
+				font-size: 17px;
+				vertical-align: top;
+				padding-right: 5px;
+			}
+		}
+	}
+	span.bs-personal-not-loggedin{
+		display: block;
+		height: 24px;
+		padding: 9px 10px 4px 10px;
+		background-color: @bs-color-dark-grey;
+	}
+}
+#bs-button-user #bs-personal-menu-container{
+	margin-top: 29px;
+}
+#bs-button-user #bs-personal-menu-container, #bs-cactions-button > div.menu{
+	background-color: transparent;
+	display: none;
+	clear: both;
+	float: none;
+	#bs-personal-menu, .bs-personal-menu{
+		box-shadow:@bs-box-shadow;
+		background-color: transparent;
+		display: block;
+		position: relative;
+		min-width: 220px;
+		padding: 10px 0;
+		background-color: @bs-color-dark-grey;
+	}
+	li{
+		margin-bottom: 0;
+		padding: 0;
+		a{
+			display: block;
+			padding: 2px 20px;
+			background-color: @bs-color-dark-grey;
+		}
+		a:hover{
+			background-color: rgb(177, 177, 177);
+		}
+	}
+	div.bs-personal-menu-top{
+		/* @embed */
+		background-image: url("@{bs-skin-path}images/desktop/usermneu-marker.png");
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: right top;
+		display: block;
+		height: 10px;
+		width: 21px;
+		position: relative;
+		z-index: 9999999;
+		margin-left: 0px;
+	}
+}
+#bs-cactions-button > div.menu{
+	margin-left: -95px;
+	> div.bs-personal-menu-top{
+		margin-left: 100px;
+	}
+}
+
+#bs-apps {
+	ul.bs-apps-child {
+		box-shadow:@bs-box-shadow;
+		background-color: @bs-color-dark-grey;
+		li {
+			a {
+				color: black !important;
+				text-align: left;
+			}
+		}
+		li:hover {
+			background-color: rgb(177, 177, 177);
+		}
+	}
+}

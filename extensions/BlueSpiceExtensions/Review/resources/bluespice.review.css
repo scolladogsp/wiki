@@ -1,0 +1,98 @@
+/**
+ * Stylesheet for Review
+ *
+ * Part of BlueSpice for MediaWiki
+ *
+ * @author     Markus Glaser <glaser@hallowelt.biz>
+ * @package    BlueSpice_Extensions
+ * @subpackage Review
+ * @copyright  Copyright (C) 2013 Hallo Welt! - Medienwerkstatt GmbH, All rights reserved.
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v2 or later
+ * @filesource
+ */
+
+.rv_no {
+	background-repeat:no-repeat;
+	/*@embed*/
+	background-image:url(images/bs-infobar-workflow-dismissed.png);
+	width:24px;
+	height:24px;
+}
+
+.rv_yes {
+	background-repeat:no-repeat;
+	/*@embed*/
+	background-image:url(images/bs-infobar-workflow-ok.png);
+	width:24px;
+	height:24px;
+}
+
+.rv_unknown {
+	background-repeat:no-repeat;
+	/*@embed*/
+	background-image:url(images/bs-infobar-workflow-open.png);
+	width:24px;
+	height:24px;
+}
+
+.rv_invalid {
+	background-repeat:no-repeat;
+	/*@embed*/
+	background-image:url(images/bs-rv-invalid.png);
+	width:24px;
+	height:24px;
+}
+
+#review-userbar-element {
+	float: right;
+	margin-right: 10px;
+	margin-top: 8px;
+}
+
+#sb-Review {
+	cursor:pointer;
+}
+.red {
+	color: #ff0000;
+}
+
+.green {
+	color: #008000;
+}
+
+.orange {
+	color: #0099FF;
+}
+
+a.bs-icon-accept, a.bs-icon-decline {
+	display: inline-block;
+	background-position: left;
+	background-repeat: no-repeat;
+	padding-left: 26px;
+	padding-top: 6px;
+	margin-left: 4px;
+	margin-right: 2px;
+	height: 22px;
+	overflow: hidden;
+	float: right;
+	color: #060606;
+	font-size: 11px;
+}
+/*TODO: this is generic. Move to BSF or leave it to the skin. */
+a.bs-icon-accept {
+	/*@embed*/
+	background-image: url(images/bs-statebar-review-accept-btn.png);
+}
+
+a.bs-icon-decline {
+	/*@embed*/
+	background-image: url(images/bs-statebar-review-decline-btn.png);
+}
+
+#bs-review-voteresponse-comment {
+	width: 98%;
+}
+
+.bs-statebar-body-reviewvotesection {
+	margin-top: 10px;
+}

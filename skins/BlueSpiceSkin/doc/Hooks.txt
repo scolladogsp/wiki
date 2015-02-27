@@ -1,0 +1,64 @@
++------------------------------------------------------------------------------+
+| Technical documentation: BlueSpice-Hooks.txt                                 |
+| Copyright (C) 2010 Hallo Welt! – Medienwerkstatt GmbH, All rights reserved.  |
++------------------------------------------------------------------------------+
+
+This document describes available hooks in the BlueSpice skin. For further
+information about what hooks are and how to use them, please refer to the
+hooks.txt file in your <mediawiki>/docs directory.
+
+==Events and parameters==
+'BSBlueSpiceSkinBeforeArticleHeadline': Use this hook to add views that should
+be displayed before the current articles headline.
+&$aViews      : An Array of view objects to be echoed.
+$oCurrentUser : The current user object in $wgUser.
+$oCurrentTitle: The current title object in $wgTitle
+
+'BSBlueSpiceSkinBeforeArticleContent': Use this hook to add views that should
+be displayed between the current articles handline and its content.
+&$aViews      : An Array of view objects to be echoed.
+$oCurrentUser : The current user object in $wgUser.
+$oCurrentTitle: The current title object in $wgTitle
+
+'BSBlueSpiceSkinAfterArticleContent': Use this hook to add views that should be
+displayed after the current articles content at the bottom of the page.
+&$aViews      : An Array of view objects to be echoed.
+$oCurrentUser : The current user object in $wgUser.
+$oCurrentTitle: The current title object in $wgTitle
+
+'BSBlueSpiceSkinFocusSidebar': Use this hook to add views that should be
+displayed within the Focus tab in the left navigation.
+&$aViews       : View objects to be displayed in the Focus area of the Sidebar
+$oCurrentUser  : The current user object in $wgUser.
+$oQuickTemplate: The current QuickTemplate object of the skin.
+
+'BSBlueSpiceSkinAdminSidebar': Use this hook to add views that should be
+displayed within the Admin tab in the left navigation. Be aware that only users
+with admin privileges will see the Admin tab.
+&$aViews       : View objects to be displayed in the Admin area of the Sidebar
+$oCurrentUser  : The current user object in $wgUser.
+$oQuickTemplate: The current QuickTemplate object of the skin.
+
+'BlueSpiceSkin:NavigationTop': Use this hook to add views that should be
+displayed above left navigation. This hook should be used very carefull in order
+to keep the navigation accessible.
+&$aViews       : Views to be executed above left navigation.
+$oQuickTemplate: The current QuickTemplate object of the skin.
+
+'BlueSpiceSkin:Widgets': Use this hook to place widgets in the WidgetBar. Please
+use the proper WidgetView class in the BS lib.
+&$aWidgets     : WidgetView objects to be displayed within the WidgetBar.
+$oCurrentUser  : The current User object.
+$oQuickTemplate: The current QuickTemplate object of the skin.
+
+'BlueSpiceSkin:printSearchBox': Use this hook to configure the searchBox in
+Titlebar. 
+&$searchBoxKeyValues: An array with preprocessed defaults is passed by
+reference. Keys can thus be overridden.
+
+'SkinTemplateContentActions': Alter the "content action" links in SkinTemplates.
+This is a classic MediaWiki hook. Please refer to the hook.txt within your
+MediaWiki installation.
+&$content_actions: Content actions
+[See http://svn.wikimedia.org/viewvc/mediawiki/trunk/extensions/examples/Content_action.php
+for an example]

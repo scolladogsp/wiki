@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stephan Muggli <muggli@hallowelt.biz>"
+		]
+	},
+	"bluespiceskin-desc": "Skin of the BlueSpice extension",
+	"bs-tools-widgets-headline": "WIDGETS",
+	"bs-tools-button": "MORE",
+	"bs-title-actions-print-text": "Print",
+	"bs-title-actions-print-title": "Displays printable version of the page"
+}

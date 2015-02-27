@@ -1,0 +1,159 @@
+## BlueSpice for MediaWiki
+## Copyright 2013-2014 by Hallo Welt! Medienwerkstatt GmbH
+## http://www.blue-spice.org
+## http://www.hallowelt.biz
+
+= BlueSpice release notes =
+
+==BlueSpice 2.23.0 beta==
+'''DO NOT USE THIS IN PRODUCTION.'''
+
+BlueSpice 2.23.0 is a minor and maintenance release.
+
+===New features===
+* BlueSpice is translated by the [https://translatewiki.net translatewiki.net] community
+* Completely revised English and German localisation
+* Added memcached support
+* Rewrite of BlueSpice skin
+* Added compatibility to vector skin
+* Added package installer for MediaWiki and BlueSpice
+* Redesign of user and BlueSpice preferences layout
+* Added support to delete multiple rows in some managers
+* Updated TinyMCE to version 4.1.3
+* Files can be found by their category in InsertFile
+
+===Change log===
+====BlueSpiceFoundation====
+* Added download button to file pages
+* Removed support for mw < 1.21
+* Added audit method for CSS selectors to find out which do not match
+* PasteImage fix for preg_match overflow
+* Added BsBaseTemplate class
+* Don't show username when user is not logged in
+* Changed searchbox ID to avoid issues with MW searchSuggest
+* Resized profile image
+* New API base class for use with ExtJS stores
+* Minor profiling fix
+* Restored compatiblity to mw 1.22
+* Fixed action buttons in CRUDGridPanel
+* Added TitleCombo for dialogs
+* Removed strict mode, reset caller to null in some cases
+* Added make method to create selModel
+* Config class change for preferences
+* Fixed UTF-8 issue in BsTagFinder
+* Replaced deprecated User::editToken call (thanks to umherirrender)
+
+====BlueSpiceExtensions====
+=====Changes affecting some or all extensions=====
+* Removed hardcoded alert window titles
+* Removed use of deprecated wfMsg, wfMsgForContent, wfMsgExt
+* Added cache support to some extensions
+
+=====Changes affecting specific extension=====
+* Authors: No authors on new page
+* Avatars: Added a maintenance script for means of debugging
+* Avatars: Fixed avatars updated hook name and method signature
+* ExtendedSearch: Fixed bug in facet editor query
+* ExtendedSearch: Removed unused vars
+* ExtendedSearch: Added @embed statement for resourceloader
+* ExtendedSearch: CSS more skin agnostic
+* ExtendedSearch: Improved file indexing
+* ExtendedSearch: Readded escaping of highlight snippets
+* ExtendedSearch: Fixed method name
+* ExtendedSearch: Changed event listener
+* ExtendedSearch: Removed undefinded property from check
+* ExtensionInfo: Improved styling of table
+* ExtensionInfo: Seperated modules so styles are loaded at the right time
+* ExtensionInfo: Added jqueryMsg dependency for Plural support
+* InsertCategory: Fixed bug that categories where removed from parser functions/SMW syntax
+* InsertCategory: Fixed regex with i18n namespaces
+* InsertFile: Inserting a document now results in an insertion at the cursor, inserted at the start of the document before (ie11)
+* UniversalExport: Fixed bookmark tree in PDF Export
+* StateBar: Removed unneccessary styling
+* StateBar: Fixed line break
+* SmartList: Fixed issue with installer
+* SmartList: Added missing options for preference
+* Notifications: PHP 5.3 compatibility
+* UEModulePDF: Fixed double encoding issue in link
+* WantedArtilce: Escaped searchstring
+* ResponsibleEditors: Added missing comma to invalid syntax
+* WhoIsOnline: Reworked tooltip mechanism
+* WikiAdmin: Sort content of admin tab in navigation alphabetically
+* VisualEditor: Updated TinyMCE to 4.1.3
+* VisualEditor: Harden handling of BR tags
+* VisualEdior: Remove unparsable anchor tags from word content
+* VisualEdior: Fixed handling of wikicode in image labels
+* VisualEditor: Fixed issue when inserting a link with a space as title the link disappeared
+
+====BlueSpiceSkin====
+* Removed softwaretable style
+* Fix for wrong jquery selectors
+* ViewBaseElement was treated as array
+* Fixes for IE and FF
+* Now using BsBaseTemplate
+* Changed flickering of jquery.ui.tabs
+* Added ajax discussion amount
+* Minor bugfix for jQuery/Firefox issue
+* Moved border styling to make it visible on specialpages
+* Removed reset CSS because it collides with ExtJS reset CSS
+* Only get discussion amount for pages
+* Refactored filenames and directories accroding to current Vector layout
+* Minor CSS fixes
+* Standard line height and maring in all content HTML texts.
+* Don't query discussion amount on non existing pages
+* Added semantic CSS classes for icon set
+* CSS Fix for Firefox
+* Fixed 404 call to jQuery UI theme resource
+* Worked on proportions, font sizes and flickering
+
+===Combatibility===
+* MediaWiki 1.22 or 1.23
+* PHP 5.3.2 or later.
+* MySQL 5.0.2 or later
+
+====Webservices====
+* Java 6, 7 or 8
+* Tomcat 6, 7 or 8
+
+===The Team===
+====Programmers====
+* Markus Glaser
+* Radovan Kubani
+* Sebastian Ulbricht
+* Marc Reymann
+* Mathias Scheer
+* Thomas Lorenz
+* Tobias Weichart
+* Robert Vogel
+* Erwin Forster
+* Karl Waldmannstetter
+* Daniel Lynge
+* Tobias Davids
+* Patric Wirth
+* Stephan Muggli
+* Stefan Widmann
+
+====Design & Testing====
+* Anja Ebersbach
+* Richard Heigl
+* Nathalie Köpff
+* Michael Rödl
+* Michael Scherm
+* Dardan Diugan
+* Christina Glaser
+* Christian Graf
+* Angelika Müller
+* Jan Göttlich
+* Karl Skodnik
+
+====Contributors====
+* Aude
+* Chad Horohoe
+* Raimond Spekking
+* Siebrand Mazeland
+* Yuki Shira
+* TGC
+* Umherirrender
+
+===Standing on the shoulders of giants===
+We would like to thank all the people around MediaWiki. You've created a wonderful piece of software. Thanks a lot!

@@ -1,0 +1,46 @@
+/*hint: http://carnage-melon.tom7.org/embed/*/
+/*transforms the ttf files to a ie-usable file*/
+
+@font-face{
+	font-family: Source Sans Pro;
+	src: url("fonts/SourceSansPro-Regular.ttf");
+}
+@font-face{
+	font-family: Source Sans Pro;
+	src: url("fonts/SourceSansPro-Bold.ttf");
+	font-weight: bold;
+}
+@font-face{
+	font-family: RobotoSlab;
+	src: url("fonts/RobotoSlab-Regular.ttf");
+}
+
+@font-face{
+	font-family: Muli;
+	src: url("fonts/muli_regular.ttf");
+}
+
+@font-face{
+	font-family: Muli Light;
+	src: url("fonts/muli_300.ttf");
+}
+
+@font-face{
+	font-family: Raleway;
+	src: url("fonts/raleway_500.ttf");
+}
+
+@font-face{
+	font-family: Open Sans Semibold;
+	src: url("fonts/open_sans_600.ttf");
+}
+
+@font-face{
+	font-family: Open Sans;
+	src: url("fonts/open_sans_regular.ttf");
+}
+
+@font-face{
+	font-family: Open Sans 300;
+	src: url("fonts/open_sans_300.ttf");
+}

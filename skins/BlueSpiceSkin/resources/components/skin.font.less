@@ -1,0 +1,234 @@
+body.mediawiki, body.x-body{
+	font-family: @bs-font-default !important;
+	font-size: 0.938em; //15px
+}
+body.mediawiki{
+	h1.firstHeading{
+		font-size: 200%;
+	}
+	h1{
+		font-size: 180%;
+	}
+	h2{
+		font-size: 160%;
+	}
+	h3{
+		font-size: 140%
+	}
+	h4{
+		font-size: 120%;
+	}
+	*[class*='icon-']:after,
+	*[class*='icon-']:before{
+		font-family: icomoon;
+	}
+	#content{
+		color: @bs-color-content-default;
+
+		h1, h2, h3, h4, h5, h6{
+			font-family: @bs-font-default;
+			border-bottom: none;
+			font-weight: normal;
+			a.mw-editsection.icon-pencil:before{
+				font-size: 15px;
+			}
+		}
+		h1{
+			margin-bottom: 5px;
+		}
+		h2{
+			border-bottom: 1px solid;
+			margin-top: 10px;
+		}
+		a, #toc a span{
+			color: @bs-color-dark-blue;
+		}
+		a.new{
+			color: @bs-color-redlink;
+		}
+		a.external {
+			/* @embed */
+			background: url("@{bs-skin-path}images/desktop/external-link-icon.png") center right no-repeat;
+			padding-right: 15px;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+
+		*[class*='icon-']:after,
+		*[class*='icon-']:before{
+			color: @bs-color-light-grey;
+		}
+		a[class*='icon-']:hover:after,
+		a[class*='icon-']:hover:before,
+		a[class*='icon-']:hover{
+			color: @bs-color-dark-blue;
+			text-decoration: none;
+		}
+		.bs-blog-item-info{
+			color: #999;
+			margin: 5px 0 12px 0;
+		}
+		.bs-blog-header{
+			border-bottom: none;
+		}
+		.bs-blog-item-headline{
+			margin-bottom: 0;
+			border-bottom-color: @bs-color-dark-grey;
+		}
+	}
+	#bs-data-after-content{
+		#bs-shoutbox{
+			form#bs-sb-form{
+				#bs-sb-send{
+					font-size: 0.85em;
+				}
+				.bs-sb-textarea-additionalinfo{
+					#bs-sb-charactercounter{
+						font-size: 75%;
+					}
+				}
+			}
+			#bs-sb-content{
+				.bs-sb-message{
+					.bs-sb-message-text, .bs-sb-message-head{
+						font-size: 90%;
+					}
+				}
+			}
+		}
+	}
+}
+#bs-left-column,
+#bs-left-column .ui-widget {
+	font-size: 90%;
+	.ui-widget {
+		font-size: 100%;
+	}
+	font-family: @bs-font-default;
+}
+#bs-personal-name{
+	font-size: 85%;
+}
+#bs-statebar{
+	font-family: @bs-font-default;
+	#bs-statebar-viewtoggler{
+		font-size: 95%;
+	}
+	#bs-statebar-viewtoggler:after{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	#bs-statebar-view{
+		h4{
+			font-size: 100%;
+		}
+		.bs-statebar-body-itembody{
+			font-size: 80%;
+		}
+		#footer-info{
+			color: @bs-color-dark-grey;
+			font-size: 85%;
+		}
+	}
+}
+#bs-content-column{
+	#left-navigation{
+		font-family: @bs-font-default;
+		li a{
+			color: @bs-color-dark-grey;
+			font-size: 75%;
+		}
+		li.selected a{
+			color: @bs-color-dark-blue;
+			font-weight: bold;
+		}
+		li a:hover{
+			color: @bs-color-dark-blue;
+		}
+	}
+	#right-navigation{
+		font-family: @bs-font-default;
+		#p-views{
+			li a{
+				color: @bs-color-dark-grey;
+				font-size: 75%;
+			}
+			li.selected a{
+				color: @bs-color-dark-blue;
+				font-weight: bold;
+			}
+			li a:hover{
+				color: @bs-color-dark-blue;
+			}
+		}
+		#bs-cactions-button a span{
+			font-family: @bs-font-default;
+			font-size: 75%;
+		}
+	}
+}
+#bs-left-column{
+	#bs-nav-sections,
+	#bs-nav-sections h5,
+	#bs-nav-sections a,
+	#bs-nav-sections .ui-widget-content a{
+		color: @bs-color-darker-grey;
+		font-family: @bs-font-default;
+	}
+	#bs-nav-sections #bs-nav-tabs a{
+		font-family: icomoon;
+		font-size: 140%;
+	}
+}
+#bs-menu-top-right{
+	#bs-user-container{
+		#bs-personal-menu, .bs-personal-menu{
+			li a{
+				font-size: 90%;
+				color: black !important;
+				font-family: @bs-font-default;
+			}
+		}
+		#bs-personal-info{
+			li a:before{
+				color: @bs-color-dark-grey;
+			}
+			li a:hover:before{
+				color: @bs-color-dark-blue;
+			}
+		}
+		span.bs-personal-not-loggedin a,
+		span.bs-personal-not-loggedin a:hover,
+		span.bs-personal-not-loggedin a:active,
+		span.bs-personal-not-loggedin a:visited{
+			font-size: 85%;
+			color: black;
+			text-decoration: none;
+		}
+	}
+}
+
+#bs-extendedsearch-autocomplete{
+	> .ui-menu li.ui-menu-item{
+		font-family: @bs-font-default;
+		color: @bs-color-dark-blue;
+	}
+}
+#bs-nav-sections.ui-tabs.ui-widget.ui-widget-content.ui-corner-all,
+#bs-nav-sections .bs-nav-tab {
+	.bs-nav-links > h5 {
+		font-size: 150%;
+	}
+}
+
+#bs-left-column #bs-nav-sections .ui-widget-content a:hover{
+	text-decoration: underline;
+}
+
+#bs-data-after-content{
+	font-family: @bs-font-default;
+	#bs-data-after-content-tabs{
+		font-size: 85%;
+	}
+}

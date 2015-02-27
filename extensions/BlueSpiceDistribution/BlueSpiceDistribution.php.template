@@ -1,0 +1,18 @@
+<?php
+
+require_once( __DIR__."/includes/AutoLoader.php");
+require_once( __DIR__."/BlueSpiceDistribution.hooks.php" );
+
+require_once( __DIR__."/CategoryTree/CategoryTree.php" );
+require_once( __DIR__."/intersection/DynamicPageList.php" );
+require_once( __DIR__."/Lockdown/Lockdown.php" );
+require_once( __DIR__."/Quiz/Quiz.php" );
+require_once( __DIR__."/RSS/RSS.php" );
+require_once( __DIR__."/WikiCategoryTagCloud/WikiCategoryTagCloud.php" );
+require_once( __DIR__."/Echo/Echo.php" );
+require_once( __DIR__."/ImageMap/ImageMap.php" );
+if (version_compare( $wgVersion, '1.23', '>=' )){
+	require_once( __DIR__ . "/MobileFrontend/MobileFrontend.php" );
+	$wgMFAutodetectMobileView = true;
+	$wgMFEnableDesktopResources = true;
+}

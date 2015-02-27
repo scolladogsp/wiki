@@ -1,0 +1,94 @@
+#bs-extendedsearch-autocomplete .ui-menu {
+	width: 336px; /* Comes from '#searchform input' in skin.search.less. Sums up width, margin and border */
+	box-sizing: border-box;
+	border-top: none;
+	border-width: 2px;
+	border-radius: 0 0 8px 8px;
+	overflow: hidden;
+}
+
+#searchform input:focus {
+	border-radius: 8px 8px 0 0;
+}
+
+#bs-extendedsearch-autocomplete{
+	> .ui-menu{
+		border: 1px solid @bs-color-middle-blue;
+		width: 335px !important;
+		box-shadow: @bs-box-shadow;
+		color: @bs-color-dark-blue;
+		border-radius: 0;
+		margin-left: -2px !important;
+		width: 337px !important;
+		li.ui-menu-item a{
+			padding: 5px 10px;
+		}
+		li.ui-menu-item a{
+			margin: 0;
+		}
+		li.ui-menu-item a:hover{
+			background-color: @bs-color-light-grey;
+		}
+		li.bs-extendedsearch-suggest.ui-menu-item,
+		li.bs-extendedsearch-ac-noresults.ui-menu-item{
+			background-color: @bs-color-middle-blue;
+			color: @bs-color-dark-blue;
+			b{
+				color: white;
+			}
+		}
+		li.bs-extendedsearch-ac-noresults.ui-menu-item{
+			border-top: none;
+		}
+	}
+	.ui-widget-content a{
+		color: @bs-color-darker-grey;
+	}
+}
+#p-search{
+	form#searchform{
+		button:before{
+			font-size: 16px;
+		}
+	}
+}
+#bs-extendedsearch-form-specialpage{
+	#bs-extendedsearch-inputfieldtext-specialpage{
+		height: 16px;
+	}
+	.bs-extendedsearch-domaindiv{
+		.bs-extendedsearch-multivaluefield{
+			margin: 9px;
+		}
+	}
+}
+#bs-extendedsearch-specialpage-body{
+	#bs-extendedsearch-filters-results-paging{
+		.bs-extendedsearch-paging-no-active{
+			padding-top: 0px;
+		}
+		.bs-extendedsearch-sorting-bar bs-extendedsearch-default-textspacing{
+			font-size: 0.75em;
+		}
+		#bs-extendedsearch-results-paging{
+			#bs-extendedsearch-results{
+				.bs-search-result-info{
+					line-height: 1.4em;
+				}
+				.bs-search-hit-text{
+					margin-top: 0;
+				}
+			}
+		}
+		#bs-extendedsearch-filters{
+			#bs-extendedsearch-all-filter-boxes{
+				.bs-facet-title, .bs-extendedsearch-facetbox{
+					.facetBarEntry{
+						line-height: normal;
+						padding: 3px 0;
+					}
+				}
+			}
+		}
+	}
+}

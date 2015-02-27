@@ -1,0 +1,116 @@
+#bs-widget-tab, #bs-flyout-heading {
+	display: none;
+}
+
+#bs-widgetbar-edit {
+	float: right;
+}
+
+#bs-flyout {
+	display: none;
+	position: absolute;
+	background-color: #FFF;
+	border: 1px solid @bs-color-dark-blue;
+	box-shadow: @bs-box-shadow;
+	z-index: 1;
+	.bs-widget-body {
+		padding: 5px;
+		height: 250px;
+		overflow-y: auto;
+	}
+
+	.bs-widget-title {
+		padding: 5px;
+		border-bottom: 1px solid @bs-color-neutral;
+		margin: 0;
+	}
+
+	#bs-flyout-content{
+		display: table;
+		margin-top: -4px;
+		> div{
+			vertical-align: top;
+		}
+		> div > h4{
+			margin: 0;
+			text-align: center;
+			padding: 3px 0;
+			background-color: @bs-color-dark-blue;
+			color: white;
+			font-weight: normal;
+		}
+		.bs-widget h5.bs-widget-title {
+			background-color: @bs-color-bright-blue-a;
+			border-bottom: none;
+			color: @bs-color-dark-blue;
+			cursor: default;
+			font-weight: normal;
+			padding: 5px 10px;
+		}
+		div.bs-widget-body{
+			padding: 0px;
+			ul{
+				list-style: none;
+				margin: 0;
+				li a{
+					display: block;
+					padding-top: 3px;
+					padding-bottom: 3px;
+				}
+				li a:hover{
+					background-color: @bs-color-light-grey;
+					text-decoration: none;
+				}
+				li *{
+					padding-left: 20px;
+				}
+			}
+		}
+		#bs-flyout-content-widgets{
+			display: table;
+			width: 721px;
+			h4{
+				display: table-caption;
+				#bs-widgetbar-edit{
+					margin-right: 5px;
+					font-size: 80%;
+					padding-top: 5px;
+				}
+			}
+			.bs-widget {
+				width: 33.2%;
+				display: inline-block;
+				border-right: 1px solid @bs-color-light-grey;
+			}
+			.bs-widget:nth-child(n+5){
+				border-top: 1px solid @bs-color-light-grey;
+			}
+			.bs-widget:nth-child(3n+1){
+				border-right: none;
+			}
+		}
+		#bs-flyout-content-more{
+			display: table-cell;
+			width: 199px;
+			border-left: 1px solid @bs-color-light-grey;
+			h4{
+				display: block;
+			}
+			#bs-widget-head{
+				#bs-widget-title{
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+//ff fix, 2nd and 3rd element show some weird behaviour, only way to fix them is with negative margin
+@-moz-document url-prefix() {
+	#bs-flyout #bs-flyout-content #bs-flyout-content-widgets .bs-widget:nth-child(-n+4){
+		margin-left: -4px;
+	}
+	#bs-flyout #bs-flyout-content #bs-flyout-content-widgets .bs-widget:nth-child(2){
+		margin-left: 0px;
+	}
+}

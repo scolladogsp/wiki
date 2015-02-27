@@ -1,0 +1,35 @@
+@body-font-size: 1em;
+@bs-skin-path: "";
+
+// BlueSpice
+// INT:https://wiki.hallowelt.biz/index.php/Blue_spice/Style_Guide/Allgemeine_Designobjekte
+@bs-color-primary: #3e5389; //blue
+@bs-color-secondary: #ffae00; //orange
+@bs-color-tertiary: #b73a3a; //red
+@bs-color-neutral: #929292; //grey
+@bs-color-neutral2: #ABABAB; //lighten(@bs-color-neutral1, 10%); - LESS / RL issue
+@bs-color-neutral3: #C4C4C4; //lighten(@bs-color-neutral1, 20%);
+@bs-color-neutral4: #787878; //darken(@bs-color-neutral1, 10%);
+@bs-color-dark-blue: rgb(62, 83, 137);
+@bs-color-bright-blue-a: rgba(205, 223, 242, 0.6);
+@bs-color-middle-blue-a: rgba(62, 83, 137, 0.44);
+@bs-color-middle-blue: rgba(152, 167, 196);
+@bs-color-light-grey: rgb(211, 211, 211);
+@bs-color-dark-grey: rgb(186, 186, 186);
+@bs-color-darker-grey: #494949;
+@bs-color-content-default: #252525;
+@bs-color-redlink: #ba0000;
+//@bs-font-default: "Neue Helvetica", Helvetica, Arial, sans-serif;
+@bs-font-default: "Source Sans Pro", sans-serif;
+@bs-font-roboto: "RobotoSlab";
+@bs-box-shadow: 0px 4px 20px 0px rgba(9, 7, 9, 0.45);
+
+@bs-width-page: 1222px;
+@bs-width-navcol: 276px;
+@bs-margin-left-content: 302px;
+
+.border-radius(@radius) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
